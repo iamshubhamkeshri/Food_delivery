@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneBanc</string>
+    <string name="checkout_page">Checkout Page</string>
+    <string name="pickup_restaurant_address">PickUp/Restaurant Address</string>
+    <string name="address">G 2/43, Middle Circle, Connaught Place (CP), New Delhi</string>
+    <string name="order_list">Order List</string>
+    <string name="doted_line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+    <string name="detail">Detail</string>
+    <string name="quantity">Quantity</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="gst_2_5">GST(2.5%)</string>
+    <string name="total">Total</string>
+    <string name="to_pay">To pay</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="cash_on_delivery">cash on delivery</string>
+    <string name="place_order">Place Order</string>
+    <string name="creator">Created By SHUBHAM KESHRI</string>
+    <string name="top_dishes">Top Dishes</string>
+    <string name="category">Categories</string>
+    <string name="add">Add</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirmation_ques">Do you want to Place Order?</string>
+    <string name="order_placed_message">Yay! Your Order Placed Successfully😍🎉🎉🎉</string>
+    <string name="pickup">Pickup</string>
+    <string name="delivery">Delivery</string>
+    <string name="restaurant_name">Shubham Da Dhaba</string>
+    <string name="open_timing">Opens at 10AM</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>हिन्दी</item>
+    </string-array>
+
+    <string-array name="dish_names">
+        <item>Paneer Butter Masala</item>
+        <item>Dum Biryani</item>
+        <item>Kadhi Pakora</item>
+        <item>Keema</item>
+        <item>Rajma</item>
+        <item>Samosa</item>
+        <item>Chilli Chicken</item>
+        <item>Chowmein</item>
+        <item>Dim Sum</item>
+        <item>Hakka Noodles</item>
+        <item>Manchurian</item>
+        <item>Spring Roll</item>
+        <item>Burittos</item>
+        <item>Chicken Curry</item>
+        <item>Chilli Con Carne</item>
+        <item>Tacos</item>
+        <item>Tomato Salsa</item>
+        <item>Chicken Ishtu</item>
+        <item>Hydrabadi Biryani</item>
+        <item>Idli</item>
+        <item>Malabar parottha</item>
+        <item>Onion Rava Dosa</item>
+        <item>Rava Upma</item>
+        <item>Uttpam</item>
+        <item>Vada</item>
+        <item>Lasagne</item>
+        <item>Margherita Pizza</item>
+        <item>Mashroom Risotto</item>
+        <item>Ravioli</item>
+        <item>Tiramisu</item>
+        <item>White Sauce Pasta</item>
+    </string-array>
+
+    <string-array name="category_names">
+        <item>North Indian</item>
+        <item>Chinese</item>
+        <item>Mexican</item>
+        <item>South Indian</item>
+        <item>Italian</item>
+    </string-array>
+
+    <string-array name="top_dish_names">
+        <item>Margherita Pizza</item>
+        <item>Paneer Butter Masala</item>
+        <item>Onion Rava Dosa</item>
+    </string-array>
+
+    <string-array name="top_category_names">
+        <item>Italian</item>
+        <item>North Indian</item>
+        <item>South Indian</item>
+    </string-array>
+</resources>

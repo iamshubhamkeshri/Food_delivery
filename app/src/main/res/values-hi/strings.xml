@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">वनबैंक</string>
+    <string name="checkout_page">चेकआउट पृष्ठ</string>
+    <string name="pickup_restaurant_address">पिकअप / रेस्तरां का पता</string>
+    <string name="address">जी 2/43, मिडिल सर्कल, कनॉट प्लेस (सीपी), नई दिल्ली</string>
+    <string name="order_list">आदेश सूची</string>
+    <string name="doted_line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+    <string name="detail">विस्तार</string>
+    <string name="quantity">मात्रा</string>
+    <string name="subtotal">उप-योग</string>
+    <string name="gst_2_5">जीएसटी(2.5%)</string>
+    <string name="total">संपूर्ण</string>
+    <string name="to_pay">मूल्यदेय</string>
+    <string name="your_cart_is_empty">आपका बैग खाली है</string>
+    <string name="payment_mode">भुगतान का प्रकार</string>
+    <string name="cash_on_delivery">डिलवरी पर नकदी</string>
+    <string name="place_order">ऑर्डर दें</string>
+    <string name="creator">शुभम केशरी द्वारा निर्मित</string>
+    <string name="top_dishes">शीर्ष व्यंजन</string>
+    <string name="category">भोजन श्रेणियाँ</string>
+    <string name="add">जोड़ें</string>
+    <string name="confirmation">पुष्टीकरण</string>
+    <string name="confirmation_ques">क्या आप प्लेस ऑर्डर करना चाहते हैं?</string>
+    <string name="order_placed_message">वाह! आपका आदेश सफलतापूर्वक रखा गया😍🎉🎉🎉</string>
+    <string name="pickup">संग्रह</string>
+    <string name="delivery">वितरण</string>
+    <string name="restaurant_name">शुभम दा ढाबा</string>
+
+    <string-array name="language">
+        <item>अंग्रेजी</item>
+        <item>Hindi</item>
+    </string-array>
+
+
+    <string-array name="dish_names">
+        <item>पनीर बटर मसाला</item>
+        <item>दम बिरयानी</item>
+        <item>कढ़ी पकोड़ा</item>
+        <item>कीमा</item>
+        <item>राजमा</item>
+        <item>समोसा</item>
+        <item>मिर्च चिकन</item>
+        <item>चौमीन</item>
+        <item>डिम सम</item>
+        <item>हक्का नूडल्स</item>
+        <item>मंचूरियन</item>
+        <item>स्प्रिंग रोल</item>
+        <item>बुरिटोस</item>
+        <item>चिकन करी</item>
+        <item>चिली कोन कार्न</item>
+        <item>टैकोस</item>
+        <item>टोमेटो सालसा</item>
+        <item>चिकन ईश्टु</item>
+        <item>हाइड्रबाडी बिरयानी</item>
+        <item>इडली</item>
+        <item>मालाबार पैरोथा</item>
+        <item>प्याज रवा डोसा</item>
+        <item>रवा उपमा</item>
+        <item>उत्तपम</item>
+        <item>वडा</item>
+        <item>लासगैन</item>
+        <item>मार्गेरिटा पिज्जा</item>
+        <item>मशरुश रिसोट्टो</item>
+        <item>रैवियोली</item>
+        <item>तिरामिसु</item>
+        <item>व्हाइट सॉस पास्ता</item>
+    </string-array>
+
+    <string-array name="category_names">
+        <item>उत्तर भारतीय</item>
+        <item>चीनी</item>
+        <item>मैक्सिकन</item>
+        <item>दक्षिण भारतीय</item>
+        <item>इतालवी</item>
+    </string-array>
+
+    <string-array name="top_dish_names">
+        <item>मार्गेरिटा पिज्जा</item>
+        <item>पनीर बटर मसाला</item>
+        <item>प्याज रवा डोसा</item>
+    </string-array>
+
+    <string-array name="top_category_names">
+        <item>इतालवी</item>
+        <item>उत्तर भारतीय</item>
+        <item>दक्षिण भारतीय</item>
+    </string-array>
+</resources>
