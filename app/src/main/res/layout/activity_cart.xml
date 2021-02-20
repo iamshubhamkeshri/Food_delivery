@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:background="@drawable/background">
+
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
@@ -61,8 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:elevation="3dp"
                 android:layout_marginBottom="16dp"
+                android:elevation="3dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -70,14 +71,15 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="5dp">
+
                     <TextView
                         android:id="@+id/text_shop_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/restaurant_name"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="@string/restaurant_name" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/text_shop_desc"
@@ -85,10 +87,10 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:gravity="start|top"
+                        android:text="@string/open_timing"
                         android:textColor="@android:color/tab_indicator_text"
                         android:textSize="12sp"
-                        android:visibility="visible"
-                        android:text="@string/open_timing" />
+                        android:visibility="visible" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -166,8 +168,7 @@
                         android:gravity="center|start"
                         android:text="@string/total"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                         />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/subtotal"
@@ -183,10 +184,10 @@
                         android:id="@+id/Gst"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="end"
                         android:layout_weight="0.1"
                         android:gravity="end"
                         android:text="₹50"
-                        android:layout_gravity="end"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -212,7 +213,6 @@
                         android:textStyle="bold" />
 
 
-
                     <TextView
                         android:id="@+id/grandTotal"
                         android:layout_width="wrap_content"
@@ -235,11 +235,13 @@
                     android:text="@string/doted_line"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="5dp">
+
                     <com.google.android.material.radiobutton.MaterialRadioButton
                         android:id="@+id/radio_pickup"
                         android:layout_width="wrap_content"
@@ -255,6 +257,7 @@
                         android:layout_weight="1"
                         android:text="@string/delivery" />
                 </RadioGroup>
+
                 <TextView
                     android:id="@+id/text_dish_rating"
                     android:layout_width="match_parent"
@@ -270,15 +273,15 @@
                     app:drawableStartCompat="@drawable/ic_baseline_money_24" />
 
                 <Button
-                    android:background="@drawable/bg_all_rounded"
                     android:id="@+id/Place_order"
-                    android:padding="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_all_rounded"
                     android:enabled="false"
+                    android:padding="5dp"
                     android:text="@string/place_order"
                     app:cornerRadius="10dp" />
 
@@ -286,18 +289,15 @@
             </LinearLayout>
 
 
-
-
-
             <LinearLayout
                 android:id="@+id/empty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="5dp"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="5dp"
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:visibility="gone">
 
                 <ImageView
@@ -313,7 +313,6 @@
                     android:textColor="@android:color/holo_red_dark" />
 
             </LinearLayout>
-
 
 
         </LinearLayout>

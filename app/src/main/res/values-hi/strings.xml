@@ -26,11 +26,10 @@
     <string name="pickup">संग्रह</string>
     <string name="delivery">वितरण</string>
     <string name="restaurant_name">शुभम दा ढाबा</string>
+    <string name="lang">English</string>
+    <string name="open_timing">सुबह 10 बजे खुलता है</string>
+    <string name="confirmation_ques_lang">क्या आप अपनी भाषा को अंग्रेजी में बदलना चाहते हैं?</string>
 
-    <string-array name="language">
-        <item>अंग्रेजी</item>
-        <item>Hindi</item>
-    </string-array>
 
 
     <string-array name="dish_names">

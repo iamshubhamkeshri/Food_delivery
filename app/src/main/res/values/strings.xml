@@ -26,12 +26,10 @@
     <string name="pickup">Pickup</string>
     <string name="delivery">Delivery</string>
     <string name="restaurant_name">Shubham Da Dhaba</string>
+    <string name="lang">हिन्दी</string>
     <string name="open_timing">Opens at 10AM</string>
+    <string name="confirmation_ques_lang">Do you want to change your language to Hindi?</string>
 
-    <string-array name="language">
-        <item>English</item>
-        <item>हिन्दी</item>
-    </string-array>
 
     <string-array name="dish_names">
         <item>Paneer Butter Masala</item>

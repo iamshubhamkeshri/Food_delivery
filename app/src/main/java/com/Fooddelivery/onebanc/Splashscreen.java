@@ -1,5 +1,6 @@
 package com.Fooddelivery.onebanc;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -22,15 +24,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class Splashscreen extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import static com.Fooddelivery.onebanc.R.string.order_placed_message;
+
+public class Splashscreen extends AppCompatActivity {
 
 
     Animation topAnim, bottomAnim, frombottomAnim, leftAnim;
@@ -63,14 +69,15 @@ public class Splashscreen extends AppCompatActivity implements AdapterView.OnIte
         //To Hide Status Bar getWindow ().setFlags ( WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splashscreen);
         res = getResources();
-        cat_name=res.getStringArray( R.array.category_names ) ;
-        top_dish_name=res.getStringArray( R.array.top_dish_names ) ;
-        top_category_name=res.getStringArray( R.array.top_category_names ) ;
-
+        cat_name = res.getStringArray(R.array.category_names);
+        top_dish_name = res.getStringArray(R.array.top_dish_names);
+        top_category_name = res.getStringArray(R.array.top_category_names);
 
 
         recyclerViewCircular = findViewById(R.id.category_recycler);
         recyclerViewCircular.setPadding(80, 0, 80, 0);
+
+
 //        recyclerViewCircular.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 //        prepareTheList();
 //
@@ -123,12 +130,46 @@ public class Splashscreen extends AppCompatActivity implements AdapterView.OnIte
         }, 2000);
 
 
-        //language spinner
-        Spinner spinner = findViewById(R.id.lang_spinner);
-        ArrayAdapter<CharSequence> adapter_lang = ArrayAdapter.createFromResource(this, R.array.language, android.R.layout.simple_spinner_item);
-        adapter_lang.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter_lang);
-        spinner.setOnItemSelectedListener(this);
+        //language change
+        TextView lang_spin = findViewById(R.id.lang_spinner);
+        lang_spin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new AlertDialog.Builder(Splashscreen.this)
+                        .setTitle(R.string.confirmation)
+                        .setMessage(R.string.confirmation_ques_lang)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                if (lang_spin.getText().equals("English")) {
+                                    Locale locale = new Locale("en");
+                                    Locale.setDefault(locale);
+                                    Configuration config = new Configuration();
+                                    config.locale = locale;
+                                    getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                                    lang_spin.setText("हिन्दी");
+                                    Intent intent = getIntent();
+                                    finish();
+                                    startActivity(intent);
+                                } else {
+                                    Locale locale = new Locale("hi");
+                                    Locale.setDefault(locale);
+                                    Configuration config = new Configuration();
+                                    config.locale = locale;
+                                    getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+                                    lang_spin.setText("English");
+                                    Intent intent = getIntent();
+                                    finish();
+                                    startActivity(intent);
+                                }
+
+
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, null).show();
+            }
+        });
 
         //cart button
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.toCart);
@@ -142,8 +183,6 @@ public class Splashscreen extends AppCompatActivity implements AdapterView.OnIte
 
 
         main.setBackgroundColor(getResources().getColor(R.color.skyBlue));
-
-
 
 
     }
@@ -165,36 +204,6 @@ public class Splashscreen extends AppCompatActivity implements AdapterView.OnIte
             count++;
         }
     }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
-
-        if(text.equals("English")||text.equals("अंग्रेजी")){
-            Locale locale = new Locale("en");
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        }else{
-            Locale locale = new Locale("hi");
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        }
-
-
-
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
-
-
 
 
     public void openLinkedin(View view) {

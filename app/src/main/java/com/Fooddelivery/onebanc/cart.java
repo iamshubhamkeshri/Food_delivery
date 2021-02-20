@@ -63,7 +63,7 @@ public class cart extends AppCompatActivity {
             placeOrder.setEnabled(true);
             recyclerView = findViewById(R.id.cart_items);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            orderAdapter adapter = new orderAdapter(orderData.orderdata,this);
+            orderAdapter adapter = new orderAdapter(orderData.orderdata, this);
             recyclerView.setAdapter(adapter);
             adapter.notifyDataSetChanged();
         } else {
@@ -94,18 +94,20 @@ public class cart extends AppCompatActivity {
             }
         });
     }
+
     public BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             // Get extra data included in the Intent
-            int qty =Integer.parseInt( intent.getStringExtra("product_quantity"));
-            if (qty==0){
+            int qty = Integer.parseInt(intent.getStringExtra("product_quantity"));
+            if (qty == 0) {
                 Cart_data.setVisibility(View.GONE);
                 Empty_cart.setVisibility(View.VISIBLE);
             }
             updateBill();
         }
     };
+
     public void updateBill() {
 
         gst.setText("₹" + String.valueOf(orderData.getTax()));
