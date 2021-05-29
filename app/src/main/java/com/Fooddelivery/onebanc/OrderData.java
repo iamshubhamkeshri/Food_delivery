@@ -44,6 +44,7 @@ public class OrderData {
         }
     }
 
+
     public static int getQuantity(int p_id) {
         int count = orderdata.size();
         int quan = 0;
@@ -73,4 +74,5 @@ public class OrderData {
         }
         return tax;
     }
+
 }
