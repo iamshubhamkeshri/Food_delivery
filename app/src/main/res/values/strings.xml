@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OneBanc</string>
+    <string name="app_name">Foodie Junction</string>
     <string name="checkout_page">Checkout Page</string>
     <string name="pickup_restaurant_address">PickUp/Restaurant Address</string>
     <string name="address">G 2/43, Middle Circle, Connaught Place (CP), New Delhi</string>

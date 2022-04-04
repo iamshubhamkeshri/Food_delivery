@@ -1,10 +1,6 @@
-package com.Fooddelivery.onebanc;
+package com.food.ordering.app;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import static com.food.ordering.app.R.string.order_placed_message;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,9 +14,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import static com.Fooddelivery.onebanc.R.string.order_placed_message;
+import com.google.android.material.snackbar.Snackbar;
 
 public class cart extends AppCompatActivity {
 

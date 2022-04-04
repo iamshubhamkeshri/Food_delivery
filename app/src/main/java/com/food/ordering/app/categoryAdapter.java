@@ -1,4 +1,4 @@
-package com.Fooddelivery.onebanc;
+package com.food.ordering.app;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.food.ordering.app.R;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.Fooddelivery.onebanc;
+package com.food.ordering.app;
 
 public class DishModel {
     private int image;

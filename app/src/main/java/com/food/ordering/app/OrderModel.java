@@ -1,4 +1,4 @@
-package com.Fooddelivery.onebanc;
+package com.food.ordering.app;
 
 public class OrderModel {
     private int p_id;
