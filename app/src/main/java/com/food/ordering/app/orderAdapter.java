@@ -46,7 +46,7 @@ public class orderAdapter extends RecyclerView.Adapter<orderAdapter.DishViewHold
 
 
         OrderData orderData = new OrderData();
-        int quanity = orderData.getQuantity(orderModel.getP_id());
+        int quanity = OrderData.getQuantity(orderModel.getP_id());
         if (quanity == 0) {
             holder.quan.setText(R.string.add);
         } else {
@@ -62,7 +62,7 @@ public class orderAdapter extends RecyclerView.Adapter<orderAdapter.DishViewHold
                     count = 0;
                 } else {
                     count = Integer.parseInt(holder.quan.getText().toString());
-                    orderData.updateQuantity(orderModel.getP_id(), 1);
+                    OrderData.updateQuantity(orderModel.getP_id(), 1);
                 }
                 holder.quan.setText(String.valueOf(count + 1));
 
@@ -82,9 +82,9 @@ public class orderAdapter extends RecyclerView.Adapter<orderAdapter.DishViewHold
                     holder.quan.setText(String.valueOf(count - 1));
 
                 } else {
-                    orderData.deleteProduct(orderModel.getP_id());
+                    OrderData.deleteProduct(orderModel.getP_id());
                 }
-                orderData.updateQuantity(orderModel.getP_id(), -1);
+                OrderData.updateQuantity(orderModel.getP_id(), -1);
                 notifyDataSetChanged();
                 Intent intent = new Intent("custom-message");
                 intent.putExtra("product_quantity", String.valueOf(orderModelList.size()));
