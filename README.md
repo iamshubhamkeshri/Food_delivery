@@ -8,6 +8,5 @@
   </strong>
 </p>
 
-<video width="320" height="240" controls autoplay>
-  <source src="https://github.com/iamshubhamkeshri/Food_delivery_app/blob/master/App_recording.mp4?raw=true" type="video/mp4">
-</video>
+https://user-images.githubusercontent.com/38960328/230325649-3b5a40f3-70d9-419f-a09d-17f8048e68d1.mp4
+
